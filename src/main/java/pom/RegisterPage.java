@@ -1,4 +1,4 @@
-package POM;
+package pom;
 
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;

@@ -1,8 +1,8 @@
-package GoToMainPageTest;
+package navigation;
 
-import POM.LoginPage;
-import POM.MainPage;
-import POM.ProfilePage;
+import pom.LoginPage;
+import pom.MainPage;
+import pom.ProfilePage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;

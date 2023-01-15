@@ -1,11 +1,11 @@
-package POM;
+package pom;
 
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import static org.hamcrest.core.StringStartsWith.startsWith;
-public class LoginPage {
+public class LoginPage extends values.MyValues{
 
     private final By registerButton = //маленькая кнопка Зарегистрироваться внизу страницы
             By.xpath(".//a[(@class = 'Auth_link__1fOlj' and text()= 'Зарегистрироваться')]");
@@ -32,8 +32,8 @@ public class LoginPage {
         MatcherAssert.assertThat(textOfRestorePasswordButton, startsWith("Восстановить пароль"));
     }
     public void enterEmailAndPassword(){ //ввести почту и пароль в окне авторизации
-        driver.findElement(emailField).sendKeys("aposdroid@ya.ru");
-        driver.findElement(passwordField).sendKeys("12341234");
+        driver.findElement(emailField).sendKeys(email);
+        driver.findElement(passwordField).sendKeys(password);
     }
     public void clickSignInButton(){ // клик на кнопку Войти
         driver.findElement(signInButton).click();

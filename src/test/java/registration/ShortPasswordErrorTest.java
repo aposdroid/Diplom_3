@@ -1,8 +1,8 @@
-package RegistrationTest;
+package registration;
 
-import POM.LoginPage;
-import POM.MainPage;
-import POM.RegisterPage;
+import pom.LoginPage;
+import pom.MainPage;
+import pom.RegisterPage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;

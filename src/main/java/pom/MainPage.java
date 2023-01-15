@@ -1,4 +1,4 @@
-package POM;
+package pom;
 
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;
@@ -7,8 +7,7 @@ import org.openqa.selenium.WebDriver;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.core.StringStartsWith.startsWith;
 
-public class MainPage {
-    private final String url = "https://stellarburgers.nomoreparties.site/";
+public class MainPage extends values.MyValues{
 
     private final By personalAccountButton =     //кнопка "Личный кабинет":
             By.xpath(".//p[text()='Личный Кабинет']");
@@ -35,7 +34,7 @@ public class MainPage {
     }
 
     public void open() {         //открыть сайт
-        driver.get(url);
+        driver.get(BASE_URI);
     }
 
     public void clickAccountButton() { //клик на кнопку Личный кабинет

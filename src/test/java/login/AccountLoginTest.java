@@ -1,22 +1,19 @@
-package LoginTest;
+package login;
 
-import POM.LoginPage;
-import POM.MainPage;
-import POM.ProfilePage;
+import pom.LoginPage;
+import pom.MainPage;
+import pom.ProfilePage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LogoutTest {
+public class AccountLoginTest {
 
     private WebDriver driver;
 
@@ -29,8 +26,8 @@ public class LogoutTest {
     }
 
     @Test
-    @DisplayName("Проверь выход по кнопке «Выйти» в личном кабинете.")
-    public void Logout() throws InterruptedException {
+    @DisplayName("Проверь переход по клику на «Личный кабинет»")
+    public void accountLogin() throws InterruptedException {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         ProfilePage profilePage = new ProfilePage(driver);
@@ -41,10 +38,9 @@ public class LogoutTest {
         loginPage.clickSignInButton();
         Thread.sleep(1000);//тут только слип помогает, нормальное ожидание через раз падает
         //new WebDriverWait(driver, Duration.ofSeconds(5))
-        //.until(ExpectedConditions.elementToBeClickable(By.xpath(".//p[text()='Конструктор']")));
+                //.until(ExpectedConditions.elementToBeClickable(By.xpath(".//p[text()='Конструктор']")));
         mainPage.clickAccountButton();
-        profilePage.clickLogoutButton();
-        loginPage.checkRegistrationIsSuccessfully();
+        profilePage.checkLogoutButton();
     }
 
     @After

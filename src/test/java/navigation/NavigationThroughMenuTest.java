@@ -1,4 +1,6 @@
-import POM.MainPage;
+package navigation;
+
+import pom.MainPage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
