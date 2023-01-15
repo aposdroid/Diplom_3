@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/values/MyValues.java" afterDir="false" />
+    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина">
+      <change afterPath="$PROJECT_DIR$/src/test/java/annotations/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POM/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/ForgotPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POM/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/POM/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GoToMainPageTest/ToMainPageFromAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/ToMainPageFromAccountPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/AccountLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/AccountLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NavigationThroughMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationThroughMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest/ShortPasswordErrorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/registration/ShortPasswordErrorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest/SuccessfulRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/registration/SuccessfulRegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/AccountLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/AccountLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/navigation/NavigationThroughMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationThroughMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/navigation/ToMainPageFromAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/ToMainPageFromAccountPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Diplom_3">
-    <configuration name="AccountLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Diplom_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -81,17 +82,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="login.AccountLoginTest" />
+      <option name="PACKAGE_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="login.LoginTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Diplom_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,18 +104,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest.Logout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShortPasswordErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="login.*" />
+          <option name="PATTERN" value="registration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="login.LogoutTest" />
-      <option name="METHOD_NAME" value="Logout" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.ShortPasswordErrorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToMainPageFromAccountPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="navigation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="navigation" />
+      <option name="MAIN_CLASS_NAME" value="navigation.ToMainPageFromAccountPageTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,9 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Diplom_3" />
+        <item itemvalue="JUnit.ShortPasswordErrorTest" />
+        <item itemvalue="JUnit.ToMainPageFromAccountPageTest" />
         <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.LogoutTest.Logout" />
-        <item itemvalue="JUnit.AccountLoginTest" />
+        <item itemvalue="JUnit.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673715181096</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина">
+      <created>1673815132848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673815132848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure." />
+    <MESSAGE value="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина" />
   </component>
 </project>
