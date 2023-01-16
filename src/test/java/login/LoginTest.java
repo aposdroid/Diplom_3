@@ -1,9 +1,9 @@
 package login;
 
-import pom.ForgotPasswordPage;
-import pom.LoginPage;
-import pom.MainPage;
-import pom.RegisterPage;
+import org.example.pom.ForgotPasswordPage;
+import org.example.pom.LoginPage;
+import org.example.pom.MainPage;
+import org.example.pom.RegisterPage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 

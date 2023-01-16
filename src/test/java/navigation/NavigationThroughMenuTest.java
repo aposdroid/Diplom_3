@@ -2,7 +2,7 @@ package navigation;
 
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pom.MainPage;
+import org.example.pom.MainPage;
 
 public class NavigationThroughMenuTest extends annotations.BaseTest {
 

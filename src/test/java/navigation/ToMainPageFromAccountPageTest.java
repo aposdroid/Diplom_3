@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pom.LoginPage;
-import pom.MainPage;
-import pom.ProfilePage;
+import org.example.pom.LoginPage;
+import org.example.pom.MainPage;
+import org.example.pom.ProfilePage;
 
 import java.time.Duration;
 

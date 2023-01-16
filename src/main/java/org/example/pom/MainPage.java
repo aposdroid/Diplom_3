@@ -1,5 +1,6 @@
-package pom;
+package org.example.pom;
 
+import org.example.values.MyValues;
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.core.StringStartsWith.startsWith;
 
-public class MainPage extends values.MyValues{
+public class MainPage extends MyValues {
 
     private final By personalAccountButton =     //кнопка "Личный кабинет":
             By.xpath(".//p[text()='Личный Кабинет']");

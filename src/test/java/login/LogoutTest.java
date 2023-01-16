@@ -1,8 +1,8 @@
 package login;
 
-import pom.LoginPage;
-import pom.MainPage;
-import pom.ProfilePage;
+import org.example.pom.LoginPage;
+import org.example.pom.MainPage;
+import org.example.pom.ProfilePage;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 

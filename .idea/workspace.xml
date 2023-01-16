@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина">
-      <change afterPath="$PROJECT_DIR$/src/test/java/annotations/BaseTest.java" afterDir="false" />
+    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="Создал класс BaseTest, куда положил @After и @Before">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pom/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pom/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pom/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pom/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pom/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/values/MyValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/values/MyValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/annotations/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/annotations/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/login/AccountLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/AccountLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/login/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LogoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/navigation/NavigationThroughMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationThroughMenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/navigation/ToMainPageFromAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/ToMainPageFromAccountPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/registration/ShortPasswordErrorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/registration/ShortPasswordErrorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/registration/SuccessfulRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/registration/SuccessfulRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +73,7 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.rest" />
       <recent name="" />
     </key>
   </component>
@@ -70,36 +82,6 @@
       <module name="Diplom_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="login.LogoutTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +97,37 @@
       <option name="PACKAGE_NAME" value="registration" />
       <option name="MAIN_CLASS_NAME" value="registration.ShortPasswordErrorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.SuccessfulRegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulRegistrationTest.successfulRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.SuccessfulRegistrationTest" />
+      <option name="METHOD_NAME" value="successfulRegistration" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,10 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Diplom_3" />
+        <item itemvalue="JUnit.SuccessfulRegistrationTest" />
+        <item itemvalue="JUnit.SuccessfulRegistrationTest.successfulRegistration" />
         <item itemvalue="JUnit.ShortPasswordErrorTest" />
         <item itemvalue="JUnit.ToMainPageFromAccountPageTest" />
-        <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673815132848</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Создал класс BaseTest, куда положил @After и @Before">
+      <created>1673818659688</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673818659688</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure." />
     <MESSAGE value="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина" />
+    <MESSAGE value="Создал класс BaseTest, куда положил @After и @Before" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал класс BaseTest, куда положил @After и @Before" />
   </component>
 </project>
