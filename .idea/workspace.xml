@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="" />
+    <list default="true" id="ff6553d0-3166-4c64-a6d4-b353e3175683" name="Changes" comment="Прописал удаление юзера после его создания в тесте SuccessfulRegistrationTest. Для этого создал отдельный пакет rest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KJqEGDnJts95PmBs7pu3EiqtpP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,9 +39,107 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/IDEA projects/Diplom/Diplom_2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="values" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA projects\Diplom\Diplom_3\src\test" />
+      <recent name="E:\IDEA projects\Diplom\Diplom_3\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.rest" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Diplom_3">
+    <configuration name="All in Diplom_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortPasswordErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.ShortPasswordErrorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.SuccessfulRegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulRegistrationTest.successfulRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="registration.SuccessfulRegistrationTest" />
+      <option name="METHOD_NAME" value="successfulRegistration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToMainPageFromAccountPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="navigation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="navigation" />
+      <option name="MAIN_CLASS_NAME" value="navigation.ToMainPageFromAccountPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Diplom_3" />
+        <item itemvalue="JUnit.SuccessfulRegistrationTest" />
+        <item itemvalue="JUnit.SuccessfulRegistrationTest.successfulRegistration" />
+        <item itemvalue="JUnit.ShortPasswordErrorTest" />
+        <item itemvalue="JUnit.ToMainPageFromAccountPageTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +149,53 @@
       <option name="presentableId" value="Default" />
       <updated>1673702921909</updated>
     </task>
+    <task id="LOCAL-00001" summary="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure.">
+      <created>1673715181096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673715181096</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина">
+      <created>1673815132848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673815132848</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Создал класс BaseTest, куда положил @After и @Before">
+      <created>1673818659688</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673818659688</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Прописал удаление юзера после его создания в тесте SuccessfulRegistrationTest. Для этого создал отдельный пакет rest">
+      <created>1673897484342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673897484342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Подключил JUnit 4, RestAssured и Allure.&#10;Написал тесты.&#10;Сделал отчёт в Allure." />
+    <MESSAGE value="Переименовал пакеты.&#10;Создал класс MyValues, где лежит URL сайта, почта и пароль для логина" />
+    <MESSAGE value="Создал класс BaseTest, куда положил @After и @Before" />
+    <MESSAGE value="Прописал удаление юзера после его создания в тесте SuccessfulRegistrationTest. Для этого создал отдельный пакет rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Прописал удаление юзера после его создания в тесте SuccessfulRegistrationTest. Для этого создал отдельный пакет rest" />
   </component>
 </project>
